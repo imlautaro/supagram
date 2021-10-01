@@ -14,6 +14,7 @@
 	"devDependencies": {
 		"@nuxt/types": "^2.15.8",
 		"@nuxt/typescript-build": "^2.1.0",
-		"@nuxtjs/composition-api": "^0.29.2"
+		"@nuxtjs/composition-api": "^0.29.2",
+		"nuxt-windicss": "^1.2.4"
 	}
 }
