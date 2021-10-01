@@ -1,6 +1,14 @@
 {
 	"name": "nuxt-app",
 	"version": "1.0.0",
-	"main": "index.js",
-	"license": "MIT"
+	"main": "nuxt.config.js",
+	"license": "MIT",
+	"scripts": {
+		"dev": "nuxt",
+		"build": "nuxt generate",
+		"start": "nuxt start"
+	},
+	"dependencies": {
+		"nuxt": "^2.15.8"
+	}
 }
