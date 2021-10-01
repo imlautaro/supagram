@@ -5,9 +5,14 @@ const config: NuxtConfig = {
 		'@nuxt/typescript-build',
 		'@nuxtjs/composition-api/module',
 		'nuxt-windicss',
+		'@nuxtclub/supabase',
 	],
 	components: true,
 	srcDir: 'src',
+	supabase: {
+		key: process.env.SUPABASE_KEY || '',
+		url: process.env.SUPABASE_URL || '',
+	},
 	target: 'static',
 }
 

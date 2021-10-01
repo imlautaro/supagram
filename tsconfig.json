@@ -15,7 +15,7 @@
 			"~/*": ["./src/*"],
 			"@/*": ["./src/*"]
 		},
-		"types": ["@types/node", "@nuxt/types"]
+		"types": ["@types/node", "@nuxt/types", "@nuxtclub/supabase"]
 	},
 	"exclude": ["node_modules"]
 }
