@@ -6,6 +6,7 @@ const config: NuxtConfig = {
 		'@nuxtjs/composition-api/module',
 		'nuxt-windicss',
 		'@nuxtclub/supabase',
+		'unplugin-icons/nuxt',
 	],
 	components: true,
 	plugins: ['~/plugins/supabase-auth'],
