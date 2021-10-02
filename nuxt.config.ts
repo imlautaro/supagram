@@ -8,6 +8,10 @@ const config: NuxtConfig = {
 		'@nuxtclub/supabase',
 	],
 	components: true,
+	plugins: ['~/plugins/supabase-auth'],
+	router: {
+		middleware: 'supabase-auth',
+	},
 	srcDir: 'src',
 	ssr: false,
 	supabase: {
