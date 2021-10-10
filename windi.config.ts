@@ -14,6 +14,9 @@ const config = defineConfig({
 				gray: colors.blueGray,
 				primary: colors.rose,
 			},
+			screens: {
+				nt: { raw: '(hover: hover)' },
+			},
 		},
 		fontFamily: {
 			sans: ['Ubuntu', 'sans-serif'],
