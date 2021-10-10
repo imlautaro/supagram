@@ -12,9 +12,10 @@ const plugin: Plugin = ({ $supaAuth, app, redirect, store, ...context }) => {
 				// Set user in store
 				store.commit('auth/SET_USER', $supaAuth.user())
 
-				// Fetch user profile
+				// Fetch user profile and follows
 				if ($supaAuth.user()) {
 					await store.dispatch('auth/fetchProfile')
+					await store.dispatch('auth/fetchFollows')
 				}
 
 				// Redirect user

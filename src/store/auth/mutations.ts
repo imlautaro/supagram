@@ -6,6 +6,9 @@ const mutations: MutationTree<RootState> = {
 	SET_PROFILE: (state, profile) => {
 		state.profile = profile
 	},
+	SET_FOLLOWS: (state, follows) => {
+		state.follows = follows
+	},
 }
 
 export default mutations

@@ -14,7 +14,7 @@ const config: NuxtConfig = {
 	css: ['~/assets/css/global.css'],
 	googleFonts: {
 		families: {
-			Ubuntu: [400, 600, 700],
+			'Encode+Sans': [400, 600, 700],
 		},
 	},
 	plugins: ['~/plugins/supabase-auth'],

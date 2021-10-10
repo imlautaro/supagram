@@ -24,6 +24,18 @@
 		@apply ring-4;
 	}
 }
+a.btn-default.btn-nav {
+	@apply text-gray-400;
+}
+a.btn-default.btn-nav.nuxt-link-exact-active {
+	@apply text-primary-600 dark:text-primary-400;
+	&:active {
+		@apply bg-primary-600/10 !important;
+	}
+	&:hover {
+		@apply bg-primary-600/5;
+	}
+}
 .btn-block {
 	@apply flex-1 w-full;
 }
@@ -264,6 +276,10 @@ export default Vue.extend({
 			default: undefined,
 			type: undefined,
 		},
+		nav: {
+			default: undefined,
+			type: undefined,
+		},
 	},
 	computed: {
 		buildClasses() {
@@ -277,34 +293,38 @@ export default Vue.extend({
 			if (this.icon !== undefined) {
 				classes.push('btn-icon')
 			}
-			switch (this.color) {
-				case 'primary':
-					classes.push('btn-primary')
-					break
-				case 'success':
-					classes.push('btn-success')
-					break
-				case 'warning':
-					classes.push('btn-warning')
-					break
-				case 'danger':
-					classes.push('btn-danger')
-					break
-				case 'info':
-					classes.push('btn-info')
-					break
-				default:
-					classes.push('btn-default')
-			}
-			switch (this.variant) {
-				case 'text':
-					classes.push('btn-text')
-					break
-				case 'outlined':
-					classes.push('btn-outlined')
-					break
-				default:
-					classes.push('btn-solid')
+			if (this.nav !== undefined) {
+				classes.push('btn-nav', 'btn-text', 'btn-default')
+			} else {
+				switch (this.color) {
+					case 'primary':
+						classes.push('btn-primary')
+						break
+					case 'success':
+						classes.push('btn-success')
+						break
+					case 'warning':
+						classes.push('btn-warning')
+						break
+					case 'danger':
+						classes.push('btn-danger')
+						break
+					case 'info':
+						classes.push('btn-info')
+						break
+					default:
+						classes.push('btn-default')
+				}
+				switch (this.variant) {
+					case 'text':
+						classes.push('btn-text')
+						break
+					case 'outlined':
+						classes.push('btn-outlined')
+						break
+					default:
+						classes.push('btn-solid')
+				}
 			}
 			switch (this.size) {
 				case 'lg':

@@ -7,6 +7,9 @@ const middleware: Middleware = async ({ $supaAuth, store }) => {
 	if (store.state.auth.profile === undefined) {
 		await store.dispatch('auth/fetchProfile')
 	}
+	if (store.state.auth.follows === undefined) {
+		await store.dispatch('auth/fetchFollows')
+	}
 }
 
 export default middleware
