@@ -11,6 +11,9 @@ const config = defineConfig({
 				primary: colors.rose,
 			},
 		},
+		fontFamily: {
+			sans: ['Ubuntu', 'sans-serif'],
+		},
 	},
 })
 

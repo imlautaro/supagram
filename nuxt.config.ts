@@ -8,8 +8,14 @@ const config: NuxtConfig = {
 		'@nuxtclub/supabase',
 		'unplugin-icons/nuxt',
 		'@nuxtjs/pwa',
+		'@nuxtjs/google-fonts',
 	],
 	components: true,
+	googleFonts: {
+		families: {
+			Ubuntu: [400, 600, 700],
+		},
+	},
 	plugins: ['~/plugins/supabase-auth'],
 	pwa: {
 		manifest: {
