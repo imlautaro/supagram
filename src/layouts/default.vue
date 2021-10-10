@@ -11,5 +11,6 @@
 			</div>
 		</nav>
 		<nuxt />
+		<ui-toasts />
 	</div>
 </template>
