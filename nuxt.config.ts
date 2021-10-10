@@ -7,9 +7,17 @@ const config: NuxtConfig = {
 		'nuxt-windicss',
 		'@nuxtclub/supabase',
 		'unplugin-icons/nuxt',
+		'@nuxtjs/pwa',
 	],
 	components: true,
 	plugins: ['~/plugins/supabase-auth'],
+	pwa: {
+		manifest: {
+			name: 'Supagram',
+			short_name: 'Supagram',
+			lang: 'en',
+		},
+	},
 	router: {
 		middleware: 'supabase-auth',
 	},

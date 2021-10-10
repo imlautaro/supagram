@@ -17,6 +17,7 @@
 		"@nuxt/typescript-build": "^2.1.0",
 		"@nuxtclub/supabase": "^1.1.1",
 		"@nuxtjs/composition-api": "^0.29.2",
+		"@nuxtjs/pwa": "^3.3.5",
 		"nuxt-windicss": "^1.2.4",
 		"unplugin-icons": "^0.12.7",
 		"windi-native": "^0.2.0"

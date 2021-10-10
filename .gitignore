@@ -4,6 +4,7 @@ node_modules/
 # NuxtJS
 .nuxt/
 dist/
+sw.*
 
 # General
 .env
