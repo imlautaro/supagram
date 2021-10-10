@@ -7,6 +7,10 @@ const config = defineConfig({
 	theme: {
 		extend: {
 			colors: {
+				danger: colors.red,
+				success: colors.green,
+				warning: colors.orange,
+				info: colors.sky,
 				gray: colors.blueGray,
 				primary: colors.rose,
 			},
