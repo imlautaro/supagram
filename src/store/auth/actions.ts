@@ -12,7 +12,17 @@ const actions: ActionTree<RootState, RootState> = {
 		if (data) {
 			commit('SET_PROFILE', data)
 		} else {
-			commit('SET_PROFILE', null)
+			const { data: data2, error } = await this.$supabase
+				.from<Profile>('profiles')
+				.insert({
+					id: this.$supaAuth.user()?.id,
+					nickname: 'New User',
+				})
+			if (error) {
+				commit('SET_PROFILE', null)
+			} else {
+				commit('SET_PROFILE', data2)
+			}
 		}
 	},
 	async fetchFollows({ commit }) {

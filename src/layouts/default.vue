@@ -1,13 +1,12 @@
 <template>
 	<div class="flex flex-col h-screen overflow-hidden w-screen">
 		<nav class="bg-white">
-			<ui-container
-				class="flex items-center justify-center md:justify-between py-4"
-			>
+			<ui-container class="flex items-center justify-between py-4">
 				<nuxt-link class="flex items-center space-x-2" to="/">
 					<brand-isotype class="w-10" />
 					<span class="font-bold text-2xl">Supagram</span>
 				</nuxt-link>
+				<!--
 				<div class="hidden md:flex items-center">
 					<ui-button variant="text" nav to="/">
 						Home
@@ -19,7 +18,8 @@
 						Messages
 					</ui-button>
 				</div>
-				<div class="hidden md:flex items-center">
+				-->
+				<div class="flex items-center">
 					<ui-button variant="text" size="sm" icon to="/account">
 						<ph-user-bold height="24px" width="24px" />
 					</ui-button>
@@ -31,6 +31,7 @@
 				<nuxt />
 			</ui-container>
 		</div>
+		<!--
 		<div class="grid grid-cols-4 md:hidden bg-white shadow">
 			<ui-button class="flex flex-col !space-x-0" block nav to="/">
 				<ph-house-bold height="24px" width="24px" />
@@ -59,6 +60,7 @@
 				<span class="text-sm">Account</span>
 			</ui-button>
 		</div>
+		-->
 		<ui-toasts />
 	</div>
 </template>

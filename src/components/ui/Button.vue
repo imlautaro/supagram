@@ -33,7 +33,7 @@ a.btn-default.btn-nav.nuxt-link-exact-active {
 		@apply bg-primary-600/10 !important;
 	}
 	&:hover {
-		@apply bg-primary-600/5;
+		@apply nt:bg-primary-600/5;
 	}
 }
 .btn-block {
@@ -48,7 +48,7 @@ a.btn-default.btn-nav.nuxt-link-exact-active {
 		@apply shadow !important;
 	}
 	&:hover {
-		@apply shadow-lg;
+		@apply nt:shadow-lg;
 	}
 }
 .btn-outlined {
@@ -79,7 +79,7 @@ a.btn-default.btn-nav.nuxt-link-exact-active {
 			@apply bg-gray-900 dark:bg-gray-200 !important;
 		}
 		&:hover {
-			@apply nt:bg-gray-700 dark:bg-white;
+			@apply nt:bg-gray-700 nt:dark:bg-white;
 		}
 	}
 	&.btn-outlined {
