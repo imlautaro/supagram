@@ -11,6 +11,7 @@ const config: NuxtConfig = {
 		'@nuxtjs/google-fonts',
 	],
 	components: true,
+	css: ['~/assets/css/global.css'],
 	googleFonts: {
 		families: {
 			Ubuntu: [400, 600, 700],

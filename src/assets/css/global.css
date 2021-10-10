@@ -1,0 +1,8 @@
+@layer base {
+	body {
+		@apply text-gray-900;
+	}
+	::selection {
+		@apply bg-primary-600 text-white;
+	}
+}
