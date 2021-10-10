@@ -2,10 +2,10 @@
 	<div
 		class="border duration-100 text-left flex items-center p-6 rounded-3xl"
 	>
-		<button class="flex flex-1 flex-col space-y-2 w-full">
+		<div class="flex flex-1 flex-col space-y-2 w-full">
 			<span class="font-semibold">{{ post.author.nickname }}</span>
 			<p>{{ post.content }}</p>
-		</button>
+		</div>
 		<ui-button
 			@click="toggleLike"
 			v-if="like"
