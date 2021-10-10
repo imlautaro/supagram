@@ -18,6 +18,7 @@
 		"@nuxtclub/supabase": "^1.1.1",
 		"@nuxtjs/composition-api": "^0.29.2",
 		"nuxt-windicss": "^1.2.4",
-		"unplugin-icons": "^0.12.7"
+		"unplugin-icons": "^0.12.7",
+		"windi-native": "^0.2.0"
 	}
 }
