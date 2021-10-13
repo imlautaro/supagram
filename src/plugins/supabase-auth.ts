@@ -8,9 +8,14 @@ const plugin: Plugin = ({ $supaAuth, app, redirect, store, ...context }) => {
 			}
 		},
 		mounted() {
-			const { data } = $supaAuth.onAuthStateChange(event => {
+			const { data } = $supaAuth.onAuthStateChange(async event => {
 				// Set user in store
 				store.commit('auth/SET_USER', $supaAuth.user())
+
+				// Fetch user profile
+				if ($supaAuth.user()) {
+					await store.dispatch('auth/fetchProfile')
+				}
 
 				// Redirect user
 				if (event === 'SIGNED_IN') {
