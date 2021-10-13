@@ -23,7 +23,7 @@ const config = defineConfig({
 			},
 		},
 		fontFamily: {
-			sans: ['Ubuntu', 'sans-serif'],
+			sans: ['"Encode Sans"', 'sans-serif'],
 		},
 	},
 })
