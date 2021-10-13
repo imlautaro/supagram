@@ -5,6 +5,10 @@ import native from 'windi-native'
 const config = defineConfig({
 	plugins: [native],
 	theme: {
+		container: {
+			center: true,
+			padding: '1rem',
+		},
 		extend: {
 			colors: {
 				danger: colors.red,
