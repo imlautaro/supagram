@@ -6,7 +6,7 @@
 					<brand-isotype class="w-10" />
 					<span class="font-bold text-2xl">Supagram</span>
 				</nuxt-link>
-				<!--
+				
 				<div class="hidden md:flex items-center">
 					<ui-button variant="text" nav to="/">
 						Home
@@ -18,7 +18,7 @@
 						Messages
 					</ui-button>
 				</div>
-				-->
+				
 				<div class="flex items-center">
 					<ui-button variant="text" size="sm" icon to="/account">
 						<ph-user-bold height="24px" width="24px" />
@@ -31,7 +31,7 @@
 				<nuxt />
 			</ui-container>
 		</div>
-		<!--
+		
 		<div class="grid grid-cols-4 md:hidden bg-white shadow">
 			<ui-button class="flex flex-col !space-x-0" block nav to="/">
 				<ph-house-bold height="24px" width="24px" />
@@ -60,7 +60,7 @@
 				<span class="text-sm">Account</span>
 			</ui-button>
 		</div>
-		-->
+		
 		<ui-toasts />
 	</div>
 </template>
